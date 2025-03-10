@@ -1,44 +1,105 @@
-📌 Blood Donor Management System
-The Blood Donor Management System is a web-based application designed to manage blood donor information efficiently. Users can add, edit, delete, and search for donors based on their blood group.
+Blood Donor Management System
 
-🚀 Technologies Used:
+Introduction
 
-Back-end: Spring Boot, Spring Data JPA, REST API
-Front-end: HTML, CSS, Thymeleaf, JavaScript
+The Blood Donor Management System is a web application designed to manage blood donors, track donation requests, and help people find suitable blood donors easily.
+
+Features
+
+Donor registration with name, blood group, and location.
+
+Search for donors based on blood type and location.
+
+Request blood from registered donors.
+
+View donation history.
+
+Admin panel to manage donors and requests.
+
+Technologies Used
+
+Backend: Spring Boot, REST API
+
+Frontend: HTML, CSS, JavaScript
+
 Database: Oracle SQL
-💡 Features:
-✅ Add, Edit, and Delete Donors
-✅ Search by Blood Group
-✅ Responsive UI
 
-📂 Project Structure:
+Persistence: Spring Data JPA, Hibernate
 
-swift
-Copy
-Edit
-Blood-Donor-Management-System/
-│── src/main/java/com/example/blooddonor/
-│── resources/templates/  # HTML Pages
-│── static/css/style.css  # Styles
-│── pom.xml
-│── README.md
-📜 How to Run:
-1️⃣ Clone the Repository:
+Tools: Spring Tool Suite (STS), Postman (for API testing)
 
-bash
-Copy
-Edit
-git clone https://github.com/kotaven/Blood-Donor-Management-System.git
-2️⃣ Configure Database: Update application.properties with your database credentials.
-3️⃣ Run the Application:
+Build Tool: Maven
 
-bash
-Copy
-Edit
+Version Control: GitHub
+
+Getting Started
+
+Prerequisites
+
+JDK 17 or later
+
+Maven
+
+Oracle Database 10g or later
+
+Postman (optional, for API testing)
+
+Setup Instructions
+
+Clone the project:
+
+git clone https://github.com/yourusername/blood-donor-management.git
+cd blood-donor-management
+
+Configure the database in application.properties:
+
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
+spring.datasource.username=your-username
+spring.datasource.password=your-password
+spring.jpa.hibernate.ddl-auto=update
+
+Build and run the project:
+
+mvn clean install
 mvn spring-boot:run
-4️⃣ Access in Browser: http://localhost:1000/list
 
-📩 Contact: kotavenkatesh2618@gmail.com
+Open the frontend in a browser to access the application.
 
-🚀 GitHub Repository
+API Endpoints
+
+Donor Management
+
+Create Donor: POST /api/donors
+
+Get All Donors: GET /api/donors
+
+Get Donor by ID: GET /api/donors/{id}
+
+Update Donor: PUT /api/donors/{id}
+
+Delete Donor: DELETE /api/donors/{id}
+
+Contributing
+
+Contributions are welcome! Follow these steps:
+
+Fork the repository.
+
+Create a new branch: git checkout -b feature/your-feature-name.
+
+Commit your changes: git commit -m 'Add feature'.
+
+Push the branch: git push origin feature/your-feature-name.
+
+Open a pull request.
+
+License
+
+This project is open-source and licensed under the MIT License.
+
+Contact
+
+For any queries or support, contact:
+
+Email: kotavenkatesh2618@gmail.com
 
