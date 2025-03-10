@@ -6,9 +6,9 @@ The Blood Donor Management System is a web application designed to manage blood 
 
 Features
 
-Donor registration with name, blood group, and location.
+Donor registration with name, blood group, and contact
 
-Search for donors based on blood type and location.
+Search for donors based on blood type with contact number.
 
 Request blood from registered donors.
 
