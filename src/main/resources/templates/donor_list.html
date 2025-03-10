@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Donor List</title>
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/script.js" defer></script>
+</head>
+<body>
+<div class="container">
+<h2>List of Donors</h2>
+<table>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Blood Group</th>
+<th>Contact</th>
+<th>Actions</th>
+</tr>
+<tr th:each="donor : ${donors}">
+<td th:text="${donor.id}"></td>
+<td th:text="${donor.name}"></td>
+<td th:text="${donor.bloodGroup}"></td>
+<td th:text="${donor.contact}"></td>
+<td>
+<a th:href="@{/edit/{id}(id=${donor.id})}" class="edit-btn">Edit</a>
+<a th:href="@{/delete/{id}(id=${donor.id})}" class="delete-btn" onclick="return confirmDelete()">Delete</a>
+</td>
+</tr>
+</table>
+<a href="/add" class="add-btn">Add New Donor</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background: black;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    
+}
+
+h1, h2 {
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+}
+
+a, button {
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-btn {
+    margin-top: 50px; 
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    box-shadow: 0 3px 10px rgba(40, 167, 69, 0.5);
+}
+
+.edit-btn {
+    background: linear-gradient(135deg, #ffc107, #e0a800);
+    color: black;
+}
+
+.delete-btn {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white;
+}
+
+.back-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+}
+
+button:hover, 
+.add-btn:hover, 
+.edit-btn:hover, 
+.delete-btn:hover, 
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+form {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    a, button {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+}
